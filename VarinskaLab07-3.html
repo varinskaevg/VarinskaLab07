@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Створення і використання форм</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<form action="form2.html" target="_blank">
+    <table class="fourteen" border="2px" bgcolor="MistyRose">
+        <tr>
+            <th colspan="2" class="seventeen">Замовлення на товар</th>
+        </tr>
+        <tr>
+            <td class="fifteen"><label for="28">Номер банківського рахунку:</label></td>
+            <td class="sixteen"><input type="text" name="text" id="28" class="eighteen"required="true" pattern="[0-9]+"></td>
+        </tr>
+        <tr>
+            <td class="fifteen"><label for="29">Номер телефону:</label></td>
+            <td class="sixteen"><input type="text" name="text" id="29" class="eighteen"required="true" pattern="[0-9]+"></td>
+        <tr>
+            <td class="fifteen"><label for="30">Список товарів:</label></td>
+            <td class="sixteen"><select name="select" id="30" size="10" multiple>
+                <option value="1">Рубашка</option>
+                <option value="2">Футболка</option>
+                <option value="3">Світшот</option>
+                <option value="4">Худі</option>
+                <option value="5">Кофта</option>
+                <option value="6">Шорти</option>
+                <option value="7">Штани</option>
+                <option value="8">Спортивний костюм</option>
+                <option value="9">Нижній одяг</option>
+                <option value="10">Аксесуари</option>
+            </select>
+            </td>
+        </tr>
+        <td class="fifteen"><label for="31">Вкажіть розміри:</label></td>
+        <td class="sixteen">
+            <label><input type="radio" name="size" value="small"> S</label><br>
+            <label><input type="radio" name="size" value="medium"> M</label><br>
+            <label><input type="radio" name="size" value="large"> L</label><br>
+            <label><input type="radio" name="size" value="xlarge"> XL</label>
+        </td>
+        </tr>
+        <tr>
+            <td class="fifteen"><label for="31">Поле для коментарів:</label></td>
+            <td class="sixteen"><TEXTAREA name="address" cols="35" rows="3" wrap="soft" id="31" class="eighteen"></TEXTAREA></td>
+        </tr>
+        <tr>
+            <td class="fifteen">Оберіть спосіб оплати:</td>
+            <td class="nineteen"><input id="32" type="radio" name="radio">
+                <label for="32">готівковий</label>
+                <input id="33" type="radio" name="radio">
+                <label for="33">безготівковий</label></td>
+        </tr>
+        <tr>
+            <td class="fifteen">Яку додаткову інформацію ви б хотіли отримати?</td>
+            <td class="nineteen"><input id="34" type="checkbox" name="box" value="1">
+                <label for="34">Дані про залишки на рахунку.</label><br>
+                <input id="35" type="checkbox" name="box" value="1">
+                <label for="35">Список останніх виплат по рахунку.</label></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="fifteen"><input type="reset" name="name" value="Очистити форму" class="twenty">
+                <input type="submit" name="submit" value="Замовити товар" class="twenty"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
